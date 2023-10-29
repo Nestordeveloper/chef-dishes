@@ -16,12 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = c:\Users\snela\Desktop\chef-dishes
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/snela/Desktop/chef-dishes/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[c:/Users/snela/Desktop/chef-dishes/Views/Home/Chef.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGVmLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/snela/Desktop/chef-dishes/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[c:/Users/snela/Desktop/chef-dishes/Views/Home/Dish.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaXNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/snela/Desktop/chef-dishes/Views/Home/Dishes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaXNoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/snela/Desktop/chef-dishes/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/snela/Desktop/chef-dishes/Views/Shared/Error.cshtml]

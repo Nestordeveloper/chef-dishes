@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9jxPKnMlkgTWbcbMyzXrw8L4QLpoIq+pwB1uThRwX7o=",
+  "Hash": "mz80QREH0xrD3QNZ0E7FPfxVQ+WaRt7sk2DJlvwaxgM=",
   "Source": "chef-dishes",
   "BasePath": "_content/chef-dishes",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\snela\\Desktop\\chef-dishes\\wwwroot\\css\\styles.css",
+      "SourceId": "chef-dishes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\snela\\Desktop\\chef-dishes\\wwwroot\\",
+      "BasePath": "_content/chef-dishes",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
       "Identity": "C:\\Users\\snela\\Desktop\\chef-dishes\\wwwroot\\favicon.ico",

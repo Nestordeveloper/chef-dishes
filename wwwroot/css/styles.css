@@ -1,0 +1,28 @@
+.navContainer {
+    border-right: 2px solid black;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+.navContainer:last-child {
+    border-right: none;
+}
+.containerTable {
+    border: 1px solid black;
+}
+
+.table thead{
+    background-color: lightgrey;
+}
+
+.btnAddChef {
+    margin-top: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0px 1px rgba(0,0,0,1);
+}
+
+.btnAddDish {
+    margin-top: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0px 1px rgba(0,0,0,1);
+}

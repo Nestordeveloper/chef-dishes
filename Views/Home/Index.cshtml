@@ -1,18 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@model Chef;
-<div>
-    <a>Chefs</a>
-    <a>Dishes</a>
-    <a>Add a Chef</a>
-    <a>Add a Dish</a>
+@model List<Chef>;
+<link rel="stylesheet" href="~/css/styles.css">
+<div class="text-center">
+    <a asp-controller="Home" asp-action="Index" class="link-offset-2 navContainer">Chefs</a>
+    <a asp-controller="Home" asp-action="Dishes" class="link-offset-2 navContainer">Dishes</a>
+    <a asp-controller="Home" asp-action="Chef" class="link-offset-2 navContainer">Add a Chef</a>
+    <a asp-controller="Home" asp-action="Dish" class="link-offset-2 navContainer">Add a Dish</a>
 </div>
 
 <div class="text-center">
     <h1>Check out our roster of chefs!</h1>
 </div>
-<div>
+<div class="containerTable">
     <table class="table">
         <thead>
             <tr>
@@ -22,22 +23,30 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>0</td>
-            </tr>
+            @foreach (Chef chef in Model)
+            {
+                <tr>
+                    <td>@chef.FirstName @chef.LastName</td>
+                    <td>
+                        @{
+                            if (chef.DateOfBirth != null)
+                            {
+                                var today = DateTime.Today;
+                                var age = today.Year - chef.DateOfBirth.Year;
+
+                                if (chef.DateOfBirth.Date > today.AddYears(-age)) age--;
+
+                                @age
+                            }
+                            else
+                            {
+                                <text>No Date of Birth</text>
+                            }
+                        }
+                    </td>
+                    <td>@chef.AllDishes.Count</td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>

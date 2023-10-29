@@ -16,13 +16,12 @@ namespace chef_dishes.Models
         [Required(ErrorMessage = "Las calorías son requeridas.")]
         [Range(0, int.MaxValue, ErrorMessage = "Las calorías deben ser un número positivo.")]
         public int Calories { get; set; }
-        [Required(ErrorMessage = "La descripción es requerida.")]
-        public string Description { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
         public int ChefId { get; set; }
+        public Chef? Creator { get; set; }
     }
 }

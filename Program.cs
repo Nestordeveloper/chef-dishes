@@ -5,7 +5,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddSession();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 // All your builder.services go here
 // And we will add one more service
@@ -27,8 +26,6 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
-app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
